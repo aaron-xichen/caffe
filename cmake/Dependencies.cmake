@@ -2,6 +2,7 @@
 set(Caffe_LINKER_LIBS "")
 
 # ---[ Boost
+set(BOOST_INCLUDEDIR /usr/include)
 find_package(Boost 1.46 REQUIRED COMPONENTS system thread filesystem)
 include_directories(SYSTEM ${Boost_INCLUDE_DIR})
 list(APPEND Caffe_LINKER_LIBS ${Boost_LIBRARIES})
